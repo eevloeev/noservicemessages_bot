@@ -3,9 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.mjs",
-    "dev": "node --inspect --watch-path=. index.mjs"
+    "start": "node src/index.mjs",
+    "dev": "node --env-file=.env --inspect --watch-path=src src/index.mjs"
   },
   "author": "Aslan Evloev <eevloeev@gmail.com>",
-  "description": "A bot that removes service messages from Telegram chats"
+  "description": "A bot that removes service messages from Telegram chats",
+  "imports": {
+    "#*": "./src/*"
+  }
 }
