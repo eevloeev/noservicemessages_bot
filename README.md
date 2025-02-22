@@ -16,9 +16,9 @@ Deploy the bot as a Docker container with following environment variables:
 For example, you can use ready-made Docker image [eevloeev/noservicemessages_bot](https://hub.docker.com/r/eevloeev/noservicemessages_bot) from Docker Hub for quick deployment:
 
 ```bash
-docker run -d --name no-service-messages-bot \
-  -e BOT_TOKEN='<YOUR_TOKEN>' \
-  -e ALLOWED_CHATS='<YOUR_CHATS>' \
+docker run -d --name noservicemessages_bot --restart unless-stopped \
+  -e BOT_TOKEN='YOUR_TOKEN' \
+  -e ALLOWED_CHATS='YOUR_CHATS' \
   eevloeev/noservicemessages_bot
 ```
 
