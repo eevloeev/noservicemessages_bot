@@ -2,6 +2,8 @@
 
 A bot that removes service messages from Telegram chats.
 
+You can find this bot on Telegram: [@noservicemessages_bot](https://t.me/noservicemessages_bot).
+
 Stack: Vanilla JavaScript, ES Modules, Node.js, zero dependencies.
 
 ## Usage
